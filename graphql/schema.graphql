@@ -1,0 +1,22 @@
+type Query {
+  users(orderBy: _@orderBy(columns: ["name", "email"])): [User!]!   @paginate
+  user(email: String @eq, id: ID): User @find
+  userByEmail(email: String! @eq): User @find
+  userByID(id: ID! @eq): User @find
+
+} 
+
+type Mutation {
+  createUser(name: String!, email: String!, password: String!): User @create
+  updateUser(id: ID!, name: String!,email: String, password: String): User! @update
+  deleteUser(id: ID @whereKey): User @delete
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  created_at: String!
+  updated_at: String
+}
+

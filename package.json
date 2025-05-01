@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "graphql:codegen": "graphql codegen",
+    "graphql:coverage": "graphql coverage",
+    "graphql:validate": "graphql validate",
+    "graphql:diff": "graphql diff",
+    "graphql:similar": "graphql similar"
+  },
+  "devDependencies": {
+    "@graphql-cli/codegen": "3.0.4",
+    "@graphql-cli/coverage": "2.1.0",
+    "@graphql-cli/diff": "2.1.0",
+    "@graphql-cli/similar": "2.1.0",
+    "@graphql-cli/validate": "2.1.0",
+    "@graphql-codegen/typescript": "4.1.6",
+    "@graphql-codegen/typescript-graphql-request": "6.2.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "axios": "^1.8.2",
+    "concurrently": "^9.0.1",
+    "graphql-cli": "4.1.0",
+    "laravel-vite-plugin": "^1.2.0",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.2.4"
+  },
+  "dependencies": {
+    "yarn": "^1.22.22"
+  }
+}
